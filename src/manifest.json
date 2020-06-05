@@ -1,0 +1,17 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "alive",
+      "identifier": "alive-identifier",
+      "script": "./my-command.ts"
+    }
+  ],
+  "menu": {
+    "title": "my-pan",
+    "items": [
+      "alive-identifier"
+    ]
+  }
+}
