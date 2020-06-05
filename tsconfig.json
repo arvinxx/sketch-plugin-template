@@ -1,7 +1,5 @@
 {
-  "include": [
-    "src", "**/*.ts", "**/*.js"
-  ],
+  "include": ["src", "**/*.ts", "**/*.js"],
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
@@ -9,6 +7,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "render/*": ["resources/*"],
+      "@/*": ["src/*"]
+    },
+    "jsx": "react"
   }
 }

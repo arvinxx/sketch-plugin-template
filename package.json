@@ -1,31 +1,45 @@
 {
-  "name": "my-pan",
+  "name": "pan",
   "version": "0.1.0",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "my-pan",
+    "name": "pan",
     "manifest": "src/manifest.json",
-    "main": "my-pan.sketchplugin",
+    "main": "pan.sketchplugin",
     "assets": [
-      "assets/**/*"
+      "static/**/*",
+      "resources/*"
     ]
   },
   "scripts": {
+    "dev": "skpm-build --watch",
+    "dev:webview": "APP_ROOT=src/webview PORT=8110 BROWSER=none umi dev",
     "build": "skpm-build",
-    "watch": "skpm-build --watch",
-    "start": "skpm-build --watch --run",
-    "lint": "eslint .",
+    "build:webview": "APP_ROOT=src/webview umi build",
+    "build:webview-watch": "APP_ROOT=src/webview umi build",
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "<1",
-    "@typescript-eslint/eslint-plugin": "^2.4.0",
-    "@typescript-eslint/parser": "^2.4.0",
-    "eslint": "^6.5.1",
-    "terser-webpack-plugin": "^3.0.0",
-    "ts-loader": "^7.0.0",
-    "typescript": "^3.1.6"
+    "@skpm/builder": "^0.7.7",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.1.0",
+    "sketch": "^0.2.0",
+    "sketch-module-web-view": "^3.4.1",
+    "terser-webpack-plugin": "^3.0.3",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.2.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "umi": "^3.2.3",
+    "yorkie": "^2.0.0"
   }
 }

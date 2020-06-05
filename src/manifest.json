@@ -3,15 +3,22 @@
   "bundleVersion": 1,
   "commands": [
     {
-      "name": "alive",
-      "identifier": "alive-identifier",
-      "script": "./my-command.ts"
+      "name": "Hello",
+      "identifier": "system-info",
+      "script": "./app.ts",
+      "shortcut": "cmd j",
+      "handler": "systemInfo"
+    },
+    {
+      "name": "panel",
+      "identifier": "panel",
+      "script": "./app.ts",
+      "handler": "panel",
+      "shortcut": "ctrl k"
     }
   ],
   "menu": {
-    "title": "my-pan",
-    "items": [
-      "alive-identifier"
-    ]
+    "title": "🚀🚀Pan🚀🚀",
+    "items": ["system-info", "panel"]
   }
 }

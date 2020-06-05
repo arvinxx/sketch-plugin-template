@@ -10,3 +10,10 @@ npm-debug.log
 .DS_Store
 
 .idea
+
+package-lock.json
+src/webview/.umi
+src/webview/.umi-production
+resources
+.umi
+/src/webview/.umi/
