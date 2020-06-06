@@ -1,14 +1,5 @@
-import { initWin } from '@/sketch/windows';
+import { homeWin } from '@/sketch/windows';
 import { systemInfo as systemInfoCmd } from '@/sketch/commands';
-
-declare global {
-  namespace NodeJS {
-    interface ProcessVersions {
-      plugin: string;
-      sketch: string;
-    }
-  }
-}
 
 /**
  * hello 方法
@@ -16,6 +7,6 @@ declare global {
 export const systemInfo = systemInfoCmd;
 
 export const panel = () => {
-  console.log('启动 init 窗口');
-  initWin();
+  console.log('启动 home 窗口');
+  homeWin();
 };

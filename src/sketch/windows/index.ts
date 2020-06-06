@@ -1,1 +1,1 @@
-export { default as initWin } from "./init";
+export { default as homeWin } from './home';

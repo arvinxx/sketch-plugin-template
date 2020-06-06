@@ -33,7 +33,7 @@ const initWindows = () => {
       .catch(console.error);
   });
 
-  browserWindow.loadURL(getWinURL('init'));
+  browserWindow.loadURL(getWinURL('home'));
 };
 
 export default initWindows;

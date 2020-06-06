@@ -1,3 +1,12 @@
+declare global {
+  namespace NodeJS {
+    interface ProcessVersions {
+      plugin: string;
+      sketch: string;
+    }
+  }
+}
+
 /**
  * 输出插件基本信息
  */

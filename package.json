@@ -1,13 +1,14 @@
 {
-  "name": "pan",
-  "version": "0.1.0",
+  "name": "sketch-plugin-scaffolding",
+  "version": "1.0.0",
+  "description": "modern sketch plugin develop scaffolding",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "🥘pan",
+    "name": "sketch-plugin-scaffolding",
     "manifest": "src/manifest.json",
-    "main": "pan.sketchplugin",
+    "main": "sketch-plugin-scaffolding.sketchplugin",
     "assets": [
       "static/**/*",
       "dist"
@@ -32,9 +33,7 @@
     "sketch-module-web-view": "^3.4.1",
     "terser-webpack-plugin": "^3.0.3",
     "ts-loader": "^7.0.5",
-    "typescript": "^3.9.5"
-  },
-  "dependencies": {
+    "typescript": "^3.9.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "@umijs/preset-react": "1.x",
