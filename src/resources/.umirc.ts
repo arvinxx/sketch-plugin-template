@@ -5,7 +5,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  outputPath: `../../resources`,
+  outputPath: `../../dist`,
   history: { type: isDev ? 'hash' : 'browser' },
   exportStatic: { htmlSuffix: true, dynamicRoot: true },
 });

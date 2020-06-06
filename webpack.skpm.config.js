@@ -34,7 +34,6 @@ module.exports = function(config, isPluginCommand) {
     };
   }
   config.resolve.alias = {
-    render: path.resolve(__dirname, './resources'),
     '@': path.resolve(__dirname, './src'),
   };
 

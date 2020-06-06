@@ -11,9 +11,11 @@ npm-debug.log
 
 .idea
 
+dist
+
 package-lock.json
-src/webview/.umi
-src/webview/.umi-production
-resources
+src/resources/.umi
+src/resources/.umi-production
+/Resources
 .umi
-/src/webview/.umi/
+/src/resources/.umi/

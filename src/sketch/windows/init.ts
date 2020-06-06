@@ -1,6 +1,6 @@
 import BrowserWindow from 'sketch-module-web-view';
 import { UI } from 'sketch';
-import { getWinURL } from '@/utils/windows';
+import { getWinURL } from '@/sketch/utils/windows';
 
 const initWindows = () => {
   const webviewIdentifier = '{{ slug }}.webview';
@@ -22,7 +22,7 @@ const initWindows = () => {
   // print a message when the page loads
   webContents.on('did-finish-load', () => {
     UI.message('UI loaded!');
-    log(process);
+    console.log(process);
   });
 
   // add a handler for a call from web content's javascript

@@ -1,7 +1,10 @@
 export const getWinURL = (win: string) => {
-  const isProd = false;
+  const isDev = process.env.NODE_ENV === 'development';
+
+  console.log(process.env.NODE_ENV);
+
   const devUrl = `http://localhost:8110/#/${win}.html`;
   const prodUrl = `../Resources/${win}.html`;
 
-  return isProd ? prodUrl : devUrl;
+  return isDev ? devUrl : prodUrl;
 };
