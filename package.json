@@ -1,14 +1,14 @@
 {
-  "name": "sketch-plugin-scaffolding",
+  "name": "sketch-plugin-template",
   "version": "1.0.0",
-  "description": "modern sketch plugin develop scaffolding",
+  "description": "modern sketch plugin develop template",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "sketch-plugin-scaffolding",
-    "manifest": "src/manifest.json",
-    "main": "sketch-plugin-scaffolding.sketchplugin",
+    "name": "sketch-plugin-template",
+    "manifest": "src/manifest.js",
+    "main": "sketch-plugin-template.sketchplugin",
     "assets": [
       "static/**/*",
       "dist"
@@ -18,9 +18,14 @@
     "dev": "concurrently \"npm run dev:resources\" \"npm run dev:sketch\"",
     "dev:sketch": "NODE_ENV=development skpm-build --watch",
     "dev:resources": "APP_ROOT=src/resources PORT=8110 BROWSER=none umi dev",
-    "build": "npm run build:resources&& npm run build:sketch",
+    "test:resources": "APP_ROOT=src/resources umi test",
+    "dev:sketch-only": "npm run build:resources &&NODE_ENV=prod skpm-build --watch",
+    "build": "npm run build:resources && npm run clean && npm run build:sketch",
     "build:sketch": "NODE_ENV=prod skpm-build",
     "build:resources": "APP_ROOT=src/resources umi build",
+    "build:resources-analyze": "APP_ROOT=src/resources ANALYZE=1 umi build",
+    "clean": "rm -rf ./*.sketchplugin",
+    "refresh": "find ./*.sketchplugin -name \"*_ts\" | entr -r /Applications/Sketch.app/Contents/MacOS/Sketch",
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
@@ -42,5 +47,6 @@
     "prettier": "^1.19.1",
     "umi": "^3.2.3",
     "yorkie": "^2.0.0"
-  }
+  },
+  "__npminstall_done": false
 }

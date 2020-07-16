@@ -6,20 +6,29 @@
     "importHelpers": true,
     "jsx": "react",
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
-    "baseUrl": "./",
     "strict": true,
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
-    },
-    "allowSyntheticDefaultImports": true
+      "typings/*": ["../../typings/*"],
+      "@/*": ["./*"],
+      "@/common": ["../common"],
+      "@/common/*": ["../common/*"],
+      "@/bridge/*": ["../bridge/*"],
+      "@/bridge": ["../bridge"],
+      "@@/*": [".umi/*"]
+    }
   },
   "include": [
     "mock/**/*",
-    "src/**/*",
-    "config/**/*",
-    ".umirc.ts",
-    "typings.d.ts"
+    "./services/**/*",
+    "./pages/**/*",
+    "./assets/**/*",
+    "config/.umirc.ts",
+    "typings.d.ts",
+    "../../typings"
   ]
 }
