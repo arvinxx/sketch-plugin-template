@@ -1,6 +1,6 @@
-# Microwave
+# Sketch Plugin Template
 
-立等可取
+Sketch 插件模板
 
 本项目基于 `skpm` 和 `umi` 进行搭建
 
