@@ -3,20 +3,27 @@
 
 <div align="center">
 
-[![NPM version][npm-image]][npm-url]  ![install size][github-size]
+[![Template Version][version-badge]][tag-url]  ![install size][github-size]
 
 [![david deps][david-image]][david-url] [![david devDeps][david-dev-image]][david-dev-url]
 
+[![Build With skpm][skpm-badge-url]][skpm-url] [![Build With umi][umi-badge-url]][umi-url]
+
+[umi-badge-url]: https://img.shields.io/badge/build%20with-umi-blue.svg
+[umi-url]: https://github.com/umijs/umi/
+[skpm-badge-url]: https://img.shields.io/badge/build%20with-skpm-ef9f39.svg
+[skpm-url]: https://github.com/skpm/skpm/
+
 <!-- npm url -->
 
-[npm-image]: https://img.shields.io/github/v/tag/arvinxx/sketch-plugin-template
-[npm-url]: https://github.com/arvinxx/sketch-plugin-template
+[version-badge]: https://img.shields.io/github/package-json/v/arvinxx/sketch-plugin-template
+[tag-url]: https://github.com/arvinxx/sketch-plugin-template/tags
 [github-size]: https://img.shields.io/github/repo-size/arvinxx/sketch-plugin-template
 
 <!-- coverage -->
 
-[coverage]: https://codecov.io/gh/arvinxx/sketch-typings/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/arvinxx/sketch-typings/branch/master
+[coverage]: https://codecov.io/gh/arvinxx/sketch-plugin-template/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/arvinxx/sketch-plugin-template/branch/master
 
 <!-- Github CI -->
 
@@ -33,9 +40,7 @@
 
 ------
 
-Sketch 插件模板
-
-本项目基于 `skpm` 和 `umi` 进行搭建
+Sketch 插件开发 模板
 
 ## CLI Commands
 ### 安装
@@ -51,6 +56,7 @@ yarn
 ``` bash
 npm run dev
 ```
+
 ###  打包构建
 ```bash
 npm run build
