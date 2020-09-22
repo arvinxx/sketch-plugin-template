@@ -1,8 +1,8 @@
 const isDev = process.env.NODE_ENV === 'development';
-const name =
-  `Sketch Plugin Template${isDev ? ' DEV' : ''}`;
+const name = `Sketch Plugin Template${isDev ? ' DEV' : ''}`;
 
-const identifier=isDev? 'sketch-plugin-template.dev'
+const identifier = isDev
+  ? 'sketch-plugin-template.dev'
   : 'sketch-plugin-template';
 module.exports = {
   compatibleVersion: 3,
@@ -15,13 +15,13 @@ module.exports = {
   commands: [
     {
       name: 'Plugin Info',
-      identifier: identifier+'.system-info',
+      identifier: identifier + '.system-info',
       script: './app.ts',
       handler: 'systemInfo',
     },
   ],
   menu: {
     title: name,
-    items: ['-', identifier+'.system-info',],
+    items: ['-', identifier + '.system-info'],
   },
 };
