@@ -11,7 +11,7 @@ const TerserPlugin = require('terser-webpack-plugin');
  * @param {boolean} isPluginCommand - whether the config is for a plugin command or an asset
  **/
 module.exports = function(config, isPluginCommand) {
-  const isProduction = process.env.NODE_ENV === 'production';
+  const isDev = process.env.NODE_ENV === 'development';
 
   // 修改 skpm 复制到 build 目录的方法
   config.module.rules[1].use.query = {
@@ -23,11 +23,22 @@ module.exports = function(config, isPluginCommand) {
       return `"file://" + String(context.scriptPath).split(".sketchplugin/Contents/Sketch")[0] + ".sketchplugin/Contents/Resources/${url}"`;
     },
   };
+
   config.module.rules.push({
     test: /\.tsx?$/,
-    exclude: /node_modules/,
-    loader: 'ts-loader',
+    exclude: [/node_modules/],
+    use: [
+      {
+        loader: 'ts-loader',
+        options: {
+          transpileOnly: isDev,
+          configFile: path.resolve(process.cwd(), 'tsconfig.json'),
+          reportFiles: ['src/sketch/**/*.ts'],
+        },
+      },
+    ],
   });
+
   if (!config.resolve) {
     config.resolve = {
       extensions: [],
@@ -40,7 +51,7 @@ module.exports = function(config, isPluginCommand) {
   config.resolve.extensions = [...config.resolve.extensions, '.ts', '.tsx'];
 
   // transformations for production (publish)
-  if (isProduction) {
+  if (!isDev) {
     config.mode = 'production';
     config.plugins.push(
       new webpack.LoaderOptionsPlugin({

@@ -1,29 +1,27 @@
+const isDev = process.env.NODE_ENV === 'development';
 const name =
-  'Sketch Plugin Template' + process.env.NODE_ENV === 'development'
-    ? ' DEV'
-    : '';
+  `Sketch Plugin Template${isDev ? ' DEV' : ''}`;
+
+const identifier=isDev? 'sketch-plugin-template.dev'
+  : 'sketch-plugin-template';
 module.exports = {
   compatibleVersion: 3,
   bundleVersion: 1,
   name,
   homepage:
     'https://github.com/arvinxx/sketch-plugin-skpm-umi-typescript-example',
-  identifier:
-    process.env.NODE_ENV === 'development'
-      ? 'sketch-plugin-template.dev'
-      : 'sketch-plugin-template',
-
+  identifier,
   icon: 'icons/logo.png',
   commands: [
     {
       name: 'Plugin Info',
-      identifier: 'sketch-plugin-template.system-info',
+      identifier: identifier+'.system-info',
       script: './app.ts',
       handler: 'systemInfo',
     },
   ],
   menu: {
     title: name,
-    items: ['-', 'sketch-plugin-template.system-info'],
+    items: ['-', identifier+'.system-info',],
   },
 };

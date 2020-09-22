@@ -1,27 +1,16 @@
-import { getSketchVersion } from '@/sketch/utils/version';
+import { getSketchVersion,getPluginVersion } from '@/sketch/utils/version';
 import { systemInfoWin } from '@/sketch/windows';
 import { sendMsgToWebView } from '@/bridge';
 
-declare global {
-  namespace NodeJS {
-    interface ProcessVersions {
-      plugin: string;
-      sketch: string;
-    }
-    interface Process {
-      type: string;
-    }
-  }
-}
 
 /**
  * 输出插件基本信息
  */
 export default (context: SketchContext) => {
   const win = systemInfoWin();
-  const plugin = process.versions.plugin;
   const env = process.env.NODE_ENV;
   const platform = process.type;
+  const plugin = getPluginVersion();
   const sketch = getSketchVersion();
   console.info('=======System Info=======');
   console.info(`开发环境: ${env}`);

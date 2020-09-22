@@ -1,4 +1,37 @@
-# Sketch Plugin Template
+
+<h1 align="center">Sketch Plugin Template</h1>
+
+<div align="center">
+
+[![NPM version][npm-image]][npm-url]  ![install size][github-size]
+
+[![david deps][david-image]][david-url] [![david devDeps][david-dev-image]][david-dev-url]
+
+<!-- npm url -->
+
+[npm-image]: https://img.shields.io/github/v/tag/arvinxx/sketch-plugin-template
+[npm-url]: https://github.com/arvinxx/sketch-plugin-template
+[github-size]: https://img.shields.io/github/repo-size/arvinxx/sketch-plugin-template
+
+<!-- coverage -->
+
+[coverage]: https://codecov.io/gh/arvinxx/sketch-typings/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/arvinxx/sketch-typings/branch/master
+
+<!-- Github CI -->
+
+[test-ci]: https://github.com/arvinxx/sketch-typings/workflows/Test%20CI/badge.svg
+[deploy-ci]: https://github.com/arvinxx/sketch-typings/workflows/Deploy%20CI/badge.svg
+[test-ci-url]: https://github.com/arvinxx/sketch-typings/actions?query=workflow%3ATest%20CI
+[deploy-ci-ci]: https://github.com/arvinxx/sketch-typings/actions?query=workflow%3ADeploy%20CI
+[david-image]: https://img.shields.io/david/arvinxx/sketch-typings?style=flat-square
+[david-dev-url]: https://david-dm.org/arvinxx/sketch-typings?type=dev
+[david-dev-image]: https://img.shields.io/david/dev/arvinxx/sketch-typings?style=flat-square
+[david-url]: https://david-dm.org/arvinxx/sketch-typings
+
+</div>
+
+------
 
 Sketch 插件模板
 
