@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "@skpm/builder": "^0.7.7",
-    "@typescript-eslint/eslint-plugin": "^3.1.0",
-    "@typescript-eslint/parser": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.2.3",
     "concurrently": "^5.2.0",
@@ -48,10 +48,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sketch-module-web-view": "^3.4.1",
-    "sketch-typings": "^0.3.0",
-    "terser-webpack-plugin": "^3.0.3",
-    "ts-loader": "^7.0.5",
-    "typescript": "^3.9.5",
+    "sketch-typings": "^0.3.2",
+    "terser-webpack-plugin": "^5.0.3",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
     "umi": "^3.2.3"
   },
   "dependencies": {

@@ -27,14 +27,14 @@
 
 <!-- Github CI -->
 
-[test-ci]: https://github.com/arvinxx/sketch-typings/workflows/Test%20CI/badge.svg
-[deploy-ci]: https://github.com/arvinxx/sketch-typings/workflows/Deploy%20CI/badge.svg
-[test-ci-url]: https://github.com/arvinxx/sketch-typings/actions?query=workflow%3ATest%20CI
-[deploy-ci-ci]: https://github.com/arvinxx/sketch-typings/actions?query=workflow%3ADeploy%20CI
-[david-image]: https://img.shields.io/david/arvinxx/sketch-typings?style=flat-square
-[david-dev-url]: https://david-dm.org/arvinxx/sketch-typings?type=dev
-[david-dev-image]: https://img.shields.io/david/dev/arvinxx/sketch-typings?style=flat-square
-[david-url]: https://david-dm.org/arvinxx/sketch-typings
+[test-ci]: https://github.com/arvinxx/sketch-plugin-template/workflows/Test%20CI/badge.svg
+[deploy-ci]: https://github.com/arvinxx/sketch-plugin-template/workflows/Deploy%20CI/badge.svg
+[test-ci-url]: https://github.com/arvinxx/sketch-plugin-template/actions?query=workflow%3ATest%20CI
+[deploy-ci-ci]: https://github.com/arvinxx/sketch-plugin-template/actions?query=workflow%3ADeploy%20CI
+[david-image]: https://img.shields.io/david/arvinxx/sketch-plugin-template?style=flat-square
+[david-dev-url]: https://david-dm.org/arvinxx/sketch-plugin-template?type=dev
+[david-dev-image]: https://img.shields.io/david/dev/arvinxx/sketch-plugin-template?style=flat-square
+[david-url]: https://david-dm.org/arvinxx/sketch-plugin-template
 
 </div>
 
