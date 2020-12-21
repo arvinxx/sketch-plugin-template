@@ -1,45 +1,27 @@
 import BrowserWindow, { BrowserWindowOptions } from 'sketch-module-web-view';
-import { browserManager } from './BrowserManager';
 
-export interface BrowserOptions extends BrowserWindowOptions {
+export interface WindowOptions extends BrowserWindowOptions {
   url: string;
   id: string;
 }
 
-export class Browser {
-  constructor(options: BrowserOptions) {
+export class Window {
+  constructor(options: WindowOptions) {
     this.options = Object.assign({ show: false }, options);
 
     this.identifier = options.identifier;
-
-    browserManager.list.forEach((d) => {
-      if (d.identifier !== this.identifier) {
-        if (d.browserWindow.isVisible()) {
-          d.hide();
-        }
-      }
-    });
-
-    const existBrowser = browserManager.get(options.identifier);
-
-    if (existBrowser) {
-      if (existBrowser.browserWindow.isVisible()) {
-        existBrowser.hide();
-      }
-      return existBrowser;
-    }
 
     this.browserWindow = new BrowserWindow(options);
 
     if (options.url) {
       this.browserWindow.loadURL(options.url);
     }
-
-    browserManager.add(this);
   }
 
   options: BrowserWindowOptions;
+
   identifier: string;
+
   browserWindow: BrowserWindow;
 
   /**

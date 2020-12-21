@@ -2,23 +2,10 @@ const { identifier, name } = require('./identifier');
 
 const commandList = [
   {
-    name: 'Window Manager init',
-    noshortcut: true,
-    identifier: `${identifier}.init`,
-    script: './app.ts',
-    handlers: {
-      actions: {
-        OpenDocument: 'onOpenDocument',
-        CloseDocument: 'onCloseDocument',
-        'SelectionChanged.finish': 'onSelectionChanged',
-      },
-    },
-  },
-  {
     name: 'Plugin Info',
     identifier: `${identifier}.system-info`,
     script: './app.ts',
-    handler: 'toggleSystemInfoPanel',
+    handlers: 'toggleSystemInfoPanel',
   },
 ];
 

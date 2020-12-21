@@ -1,14 +1,13 @@
 import { getSketchVersion, getPluginVersion } from '@/utils/version';
-import { browserManager } from '@/modules';
 import { sendMsgToWebView } from '@/bridge';
-import { getIdentifier } from '@/utils';
+import { systemInfoWindow } from '@/windows';
 
 /**
  * 输出插件基本信息
  */
 export const toggleSystemInfoPanel = (context: SketchContext) => {
-  const win = browserManager.get(getIdentifier('system-info'));
-  console.log(win);
+  const win = systemInfoWindow;
+
   const env = process.env.NODE_ENV;
   const platform = process.type;
   const plugin = getPluginVersion();

@@ -1,3 +1,1 @@
-import { systemInfoWindow } from './systemInfo';
-
-export const windowsList = [systemInfoWindow];
+export { systemInfoWindow } from './systemInfo';

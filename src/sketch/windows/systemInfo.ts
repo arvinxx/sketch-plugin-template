@@ -1,7 +1,7 @@
-import { BrowserOptions } from '@/modules/windowsBrowser';
+import { Window } from '@/modules/BrowserWindow';
 import { getWinURL } from '@/utils/windows';
 
-export const systemInfoWindow: BrowserOptions = {
+export const systemInfoWindow = new Window({
   alwaysOnTop: true,
   id: 'system-info',
   width: 240,
@@ -11,4 +11,4 @@ export const systemInfoWindow: BrowserOptions = {
   resizable: false,
   hidesOnDeactivate: false,
   url: getWinURL('home'),
-};
+});

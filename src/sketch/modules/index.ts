@@ -1,1 +1,1 @@
-export { browserManager } from './windowsBrowser';
+export { WindowsManager, Window } from './BrowserWindow';

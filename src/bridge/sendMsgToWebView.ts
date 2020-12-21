@@ -2,7 +2,7 @@ import { BrowserWindow } from 'sketch-module-web-view';
 
 import { ChannelType } from '@/bridge/channel';
 /**
- * 向 windowsBrowser 发送消息
+ * 向 BrowserWindow 发送消息
  * @param {BrowserWindow} window 指令的窗口
  * @param {ChannelType} channel 通信信道
  * @param {*} data 需要发送的数据
