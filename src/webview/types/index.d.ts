@@ -1,5 +1,3 @@
-import  'sketch-typings';
-
 declare module '*.css';
 declare module '*.css';
 declare module '*.less';

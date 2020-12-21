@@ -1,7 +1,6 @@
-import { getSketchVersion,getPluginVersion } from '@/sketch/utils/version';
-import { systemInfoWin } from '@/sketch/windows';
+import { getSketchVersion, getPluginVersion } from '@/utils/version';
+import { systemInfoWin } from '@/windows';
 import { sendMsgToWebView } from '@/bridge';
-
 
 /**
  * 输出插件基本信息

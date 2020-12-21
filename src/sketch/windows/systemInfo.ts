@@ -1,6 +1,6 @@
 import BrowserWindow from 'sketch-module-web-view';
 import { UI } from 'sketch';
-import { getWinURL } from '@/sketch/utils/windows';
+import { getWinURL } from '@/utils/windows';
 import { winIdentifier } from './index';
 
 let browserWindow: BrowserWindow = null;

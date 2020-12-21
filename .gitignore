@@ -14,8 +14,5 @@ npm-debug.log
 dist
 
 package-lock.json
-src/resources/.umi
-src/resources/.umi-production
-/Resources
 .umi
-/src/resources/.umi/
+.umi-production

@@ -1,4 +1,6 @@
 {
+  "include": ["./*", "../../types"],
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -13,22 +15,12 @@
     "strict": true,
     "baseUrl": "./",
     "paths": {
-      "typings/*": ["../../typings/*"],
-      "@/*": ["./*"],
       "@/common": ["../common"],
       "@/common/*": ["../common/*"],
       "@/bridge/*": ["../bridge/*"],
       "@/bridge": ["../bridge"],
+      "@/*": ["./*"],
       "@@/*": [".umi/*"]
     }
-  },
-  "include": [
-    "mock/**/*",
-    "./services/**/*",
-    "./pages/**/*",
-    "./assets/**/*",
-    "config/.umirc.ts",
-    "typings.d.ts",
-    "../../typings"
-  ]
+  }
 }
