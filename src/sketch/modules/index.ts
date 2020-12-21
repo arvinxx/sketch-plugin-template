@@ -1,1 +1,1 @@
-export * from './sidebar';
+export { browserManager } from './windowsBrowser';

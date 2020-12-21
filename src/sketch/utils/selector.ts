@@ -1,5 +1,9 @@
 import { getSelectedDocument, Artboard } from 'sketch';
+import { identifier } from '@/identifier';
 
+export const getIdentifier = (id) => {
+  return `${identifier}.webview.${id}`;
+};
 /**
  * getSketchSelected
  * 获取当前选择的 document artboard page 和 selection

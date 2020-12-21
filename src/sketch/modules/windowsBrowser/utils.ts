@@ -1,3 +1,12 @@
+import { windowsList } from '@/windows';
+import { browserManager } from '@/modules';
+
+export const initManager = () => {
+  windowsList.forEach((options) => {
+    browserManager.create(options);
+  });
+};
+
 /**
  * 生成窗口
  * @param button

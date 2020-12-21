@@ -1,4 +1,5 @@
-import { Browser } from './Browser';
+import { Browser, BrowserOptions } from './Browser';
+import { getIdentifier } from '@/utils';
 
 /**
  * 窗口管理器
@@ -7,7 +8,7 @@ class BrowserManager {
   /**
    * 窗口列表
    */
-  list: Browser[];
+  list: Browser[] = [];
 
   /**
    * 添加窗口
@@ -24,6 +25,7 @@ class BrowserManager {
   get(identifier) {
     return this.list.find((d) => d.identifier === identifier);
   }
+
   /**
    * 获取当前窗口
    */
@@ -36,6 +38,17 @@ class BrowserManager {
    */
   empty() {
     this.list = [];
+  }
+
+  /**
+   * 创建窗口
+   * @param options
+   */
+  create(options: BrowserOptions) {
+    return new Browser({
+      ...options,
+      identifier: getIdentifier(options.id),
+    });
   }
 }
 

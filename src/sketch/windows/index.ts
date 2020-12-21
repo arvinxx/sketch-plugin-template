@@ -1,5 +1,3 @@
-export { default as systemInfoWin } from './systemInfo';
+import { systemInfoWindow } from './systemInfo';
 
-export const winIdentifier = {
-  SYSTEM_INFO: 'example.windows.system-info',
-};
+export const windowsList = [systemInfoWindow];

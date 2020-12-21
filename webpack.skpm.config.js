@@ -10,7 +10,7 @@ const TerserPlugin = require('terser-webpack-plugin');
  * @param {object} config - original webpack config.
  * @param {boolean} isPluginCommand - whether the config is for a plugin command or an asset
  **/
-module.exports = function (config, isPluginCommand) {
+module.exports = function (config) {
   const isDev = process.env.NODE_ENV === 'development';
 
   // 修改 skpm 复制到 build 目录的方法

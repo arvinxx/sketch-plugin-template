@@ -32,7 +32,8 @@
     "build:webview": "APP_ROOT=src/webview umi build",
     "build:webview-analyze": "APP_ROOT=src/webview ANALYZE=1 umi build",
     "clean": "rm -rf ./*.sketchplugin",
-    "refresh": "find ./*.sketchplugin -name \"*_app*\" | entr -r /Applications/Sketch.app/Contents/MacOS/Sketch",
+    "refresh": "find ./*.sketchplugin -name \"_*.js\" | entr -r /Applications/Sketch.app/Contents/MacOS/Sketch",
+    "log": "skpm log -f",
     "link": "skpm-link",
     "postinstall": "npm run build && skpm-link"
   },

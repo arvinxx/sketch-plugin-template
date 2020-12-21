@@ -1,3 +1,5 @@
+import { BrowserWindow } from 'sketch-module-web-view';
+
 import { ChannelType } from '@/bridge/channel';
 /**
  * 向 windowsBrowser 发送消息
