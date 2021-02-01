@@ -1,25 +1,14 @@
 {
-  "include": ["./*", "../../types"],
+  "include": [".", "../../types"],
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "jsx": "react",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "strict": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@/common": ["../common"],
       "@/common/*": ["../common/*"],
       "@/bridge/*": ["../bridge/*"],
       "@/bridge": ["../bridge"],
-      "@/*": ["./*"],
+      "@/*": ["*"],
       "@@/*": [".umi/*"]
     }
   }

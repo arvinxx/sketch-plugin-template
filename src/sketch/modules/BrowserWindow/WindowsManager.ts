@@ -1,6 +1,6 @@
 import { Window, WindowOptions } from './Window';
 import { getIdentifier } from '@/utils';
-import { windowsList } from '@/windows';
+// import { windowsList } from '@/windows';
 
 /**
  * 窗口管理器
@@ -8,9 +8,9 @@ import { windowsList } from '@/windows';
 export class WindowsManager {
   constructor() {
     console.log('窗口初始化');
-    windowsList.forEach((options) => {
-      this.list.push(WindowsManager.create(options));
-    });
+    // windowsList.forEach((options) => {
+    //   this.list.push(WindowsManager.create(options));
+    // });
   }
   /**
    * 窗口列表
