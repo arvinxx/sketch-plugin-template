@@ -1,6 +1,7 @@
 {
   "name": "sketch-plugin-template",
   "version": "1.0.0",
+  "private": true,
   "description": "modern sketch plugin develop template",
   "license": "MIT",
   "author": "Arvin Xu <arvinx@foxmail.com> (https://www.arvinx.com)",
