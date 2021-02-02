@@ -11,7 +11,7 @@ npm-debug.log
 
 .idea
 
-dist
+dist*
 
 package-lock.json
 .umi

@@ -29,6 +29,7 @@
     "build:webview": "APP_ROOT=src/webview umi build",
     "build:webview-analyze": "APP_ROOT=src/webview ANALYZE=1 umi build",
     "release": "semantic-release",
+    "release:zip": "ts-node ./scripts/zip",
     "clean": "rm -rf ./*.sketchplugin",
     "refresh": "find ./*.sketchplugin -name \"_*.js\" | entr -r /Applications/Sketch.app/Contents/MacOS/Sketch",
     "log": "skpm log -f",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/release-notes-generator": "^9.0.1",
     "@skpm/builder": "^0.7.7",
@@ -45,6 +47,7 @@
     "@typescript-eslint/parser": "^4.9.0",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.2.3",
+    "archiver": "^5.2.0",
     "commitlint": "^11.0.0",
     "commitlint-config-gitmoji": "^2.1.10",
     "concurrently": "^5.2.0",
@@ -60,6 +63,7 @@
     "sketch-types": "^0.4.2",
     "terser-webpack-plugin": "^3.1.0",
     "ts-loader": "^8.0.11",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.2",
     "umi": "^3.3.2"
   },

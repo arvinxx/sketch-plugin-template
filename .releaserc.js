@@ -19,7 +19,23 @@ module.exports = {
         changelogTitle: '# 更新日志',
       },
     ],
-    '@semantic-release/github',
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd: 'yarn release:zip',
+      },
+    ],
+    [
+      '@semantic-release/github',
+      {
+        assets: [
+          {
+            path: 'dist-zip/sketch-plugin-template.zip',
+            label: 'sketch-plugin-template.${nextRelease.gitTag}.zip',
+          },
+        ],
+      },
+    ],
     [
       '@semantic-release/git',
       {
