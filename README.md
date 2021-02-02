@@ -3,22 +3,21 @@
 
 <div align="center">
 
-[![Template Version][version-badge]][tag-url]  ![install size][github-size]
+[![Template Version][version-badge]][release-url] [![Build With skpm][skpm-badge-url]][skpm-url] [![Build With umi][umi-badge-url]][umi-url]  [![semantic-release][semantic-release]][semantic-release-repo]  
 
 [![david deps][david-image]][david-url] [![david devDeps][david-dev-image]][david-dev-url]
 
-[![Build With skpm][skpm-badge-url]][skpm-url] [![Build With umi][umi-badge-url]][umi-url]
 
 [umi-badge-url]: https://img.shields.io/badge/build%20with-umi-blue.svg
 [umi-url]: https://github.com/umijs/umi/
 [skpm-badge-url]: https://img.shields.io/badge/build%20with-skpm-ef9f39.svg
 [skpm-url]: https://github.com/skpm/skpm/
+[semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-repo]: https://github.com/semantic-release/semantic-release
 
 <!-- npm url -->
-
-[version-badge]: https://img.shields.io/github/package-json/v/arvinxx/sketch-plugin-template
-[tag-url]: https://github.com/arvinxx/sketch-plugin-template/tags
-[github-size]: https://img.shields.io/github/repo-size/arvinxx/sketch-plugin-template
+[version-badge]: https://img.shields.io/github/v/release/arvinxx/sketch-plugin-template
+[release-url]: https://github.com/arvinxx/sketch-plugin-template/release
 
 <!-- coverage -->
 
