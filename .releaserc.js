@@ -25,6 +25,7 @@ module.exports = {
         prepareCmd: 'yarn release:zip',
       },
     ],
+    '@semantic-release/npm', // 自动更新版本号,如果是 npm 模块则会触发发布流程
     [
       '@semantic-release/github',
       {
