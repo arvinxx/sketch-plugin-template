@@ -1,5 +1,23 @@
 # 更新日志
 
+# [0.2.0](https://github.com/arvinxx/sketch-plugin-template/compare/v0.1.0...v0.2.0) (2021-02-02)
+
+
+### ✨ Features
+
+* **杂项**: 添加 release 压缩包 ([2ece129](https://github.com/arvinxx/sketch-plugin-template/commit/2ece129))
+
+
+### 🐛 Bug Fixes
+
+* **杂项**: 修复版本号问题 ([1c52510](https://github.com/arvinxx/sketch-plugin-template/commit/1c52510))
+* **杂项**: 设为非 npm 模块 ([fd7e2d8](https://github.com/arvinxx/sketch-plugin-template/commit/fd7e2d8))
+
+
+### 📝 Documentation
+
+* **杂项**: update document ([8173a32](https://github.com/arvinxx/sketch-plugin-template/commit/8173a32))
+
 # [0.1.0](https://github.com/arvinxx/sketch-plugin-template/compare/v0.0.1...v0.1.0) (2021-02-02)
 
 
