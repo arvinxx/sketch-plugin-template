@@ -15569,10 +15569,10 @@ tryer@^1.0.1:
   resolved "https://registry.npm.taobao.org/tryer/download/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha1-8shUBoALmw90yfdGW4HqrSQSUvg=
 
-ts-loader@^8.0.11:
-  version "8.0.14"
-  resolved "https://registry.npm.taobao.org/ts-loader/download/ts-loader-8.0.14.tgz#e46ac1f8dcb88808d0b1335d2eae65b74bd78fe8"
-  integrity sha1-5GrB+Ny4iAjQsTNdLq5lt0vXj+g=
+ts-loader@^8.0.16:
+  version "8.0.16"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.16.tgz#a60311f01f015518e1cfbb5698e6ca8830cd2391"
+  integrity sha512-Cr9ywsgg1n8cjGjIogHLPlqe3WJUHzuJaqwNo5I596KpIqekKzxvSENbrXeOypHcXSPPsr8hV6mglngyXvcKrg==
   dependencies:
     chalk "^4.1.0"
     enhanced-resolve "^4.0.0"
