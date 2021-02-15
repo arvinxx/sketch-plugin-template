@@ -61,7 +61,7 @@
     "semantic-release": "^17.3.9",
     "sketch-module-web-view": "^3.5.1",
     "sketch-types": "^0.4.2",
-    "terser-webpack-plugin": "^3.1.0",
+    "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^8.0.17",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5",
