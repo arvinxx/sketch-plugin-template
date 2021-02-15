@@ -1,5 +1,24 @@
 # 更新日志
 
+## [0.3.5](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.4...v0.3.5) (2021-02-15)
+
+
+### 🎫 杂项
+
+* **deps-dev**: bump @types/node from 14.14.22 to 14.14.28 ([5922dc4](https://github.com/arvinxx/sketch-plugin-template/commit/5922dc4))
+* **deps-dev**: bump semantic-release from 17.3.7 to 17.3.9 ([29e23b1](https://github.com/arvinxx/sketch-plugin-template/commit/29e23b1))
+* **deps-dev**: bump typescript from 4.1.3 to 4.1.5 ([71aacf8](https://github.com/arvinxx/sketch-plugin-template/commit/71aacf8))
+
+
+### 🐛 修复
+
+* 修正 release 插件版本号不对的 bug ([0e1940b](https://github.com/arvinxx/sketch-plugin-template/commit/0e1940b))
+
+
+### 🔧 持续集成
+
+* 优化合并 ci 流程 ([d497dff](https://github.com/arvinxx/sketch-plugin-template/commit/d497dff))
+
 ## [0.3.4](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.3...v0.3.4) (2021-02-15)
 
 
