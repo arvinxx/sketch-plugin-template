@@ -4,7 +4,23 @@ on:
     types: [labeled, edited]
 
 jobs:
+  precheck:
+    continue-on-error: true # 如果这个这个 job 挂了继续往下走
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        # 这个 action 可以 cancel 掉先前运行的 action
+        # 使得运行的脚本始终是最新的 commit
+        # https://github.com/marketplace/actions/skip-duplicate-actions
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          skip_after_successful_duplicate: 'true'
+
   check:
+    needs: precheck
     if: contains(github.event.pull_request.labels.*.name, 'dependencies')
     name: Code Quilty Check
     runs-on: macos-latest
