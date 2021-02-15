@@ -1,5 +1,3 @@
 module.exports = {
-  scopeDisplayName: {
-    "*": "杂项",
-  },
+  titleLanguage: 'zh-CN',
 };

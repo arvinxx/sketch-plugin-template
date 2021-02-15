@@ -7,8 +7,8 @@ const archiver = require('archiver');
 const pkg = require('../package.json');
 
 const DIR_NAME = 'sketch-plugin-template.sketchplugin';
-const DEST_DIR = path.join(__dirname, '../sketch-plugin-template.sketchplugin');
-const DEST_ZIP_DIR = path.join(__dirname, '../dist-zip');
+const DEST_DIR = path.join(__dirname, `../${DIR_NAME}`);
+const DEST_ZIP_DIR = path.join(__dirname, '../release');
 
 const extractExtensionData = () => {
   return {
@@ -42,16 +42,11 @@ const buildZip = (src: string, dist: string, zipFilename: string) => {
 
 const main = () => {
   const { name, version } = extractExtensionData();
-  const zipFilename = `${name}-v${version}.zip`;
-  const zipDistName = `${name}.zip`;
+  const zipFilename = `${name}.v${version}.zip`;
 
   makeDestZipDirIfNotExists();
 
   buildZip(DEST_DIR, DEST_ZIP_DIR, zipFilename)
-    .then(() => console.info('✅  Build Done with Version!'))
-    .catch(console.error);
-
-  buildZip(DEST_DIR, DEST_ZIP_DIR, zipDistName)
     .then(() => console.info('✅  Build Done!'))
     .catch(console.error);
 };
