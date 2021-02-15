@@ -1,5 +1,12 @@
 # 更新日志
 
+## [0.2.2](https://github.com/arvinxx/sketch-plugin-template/compare/v0.2.1...v0.2.2) (2021-02-15)
+
+
+### 🐛 修复
+
+* 修正release ci 没有生成产物的 bug ([b9052b0](https://github.com/arvinxx/sketch-plugin-template/commit/b9052b0))
+
 ## [0.2.1](https://github.com/arvinxx/sketch-plugin-template/compare/v0.2.0...v0.2.1) (2021-02-15)
 
 
