@@ -1,6 +1,6 @@
 {
   "name": "sketch-plugin-template",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "description": "modern sketch plugin develop template",
   "license": "MIT",
