@@ -1,5 +1,12 @@
 # 更新日志
 
+## [0.3.4](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.3...v0.3.4) (2021-02-15)
+
+
+### 🐛 修复
+
+* 修正 release ci release 脚本多次执行的 bug ([a798b48](https://github.com/arvinxx/sketch-plugin-template/commit/a798b48))
+
 ## [0.3.3](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.2...v0.3.3) (2021-02-15)
 
 
