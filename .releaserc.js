@@ -19,13 +19,13 @@ module.exports = {
         changelogTitle: '# 更新日志',
       },
     ],
+    '@semantic-release/npm', // 自动更新版本号,如果是 npm 模块则会触发发布流程
     [
       '@semantic-release/exec',
       {
         prepareCmd: 'yarn zip',
       },
     ],
-    '@semantic-release/npm', // 自动更新版本号,如果是 npm 模块则会触发发布流程
     [
       '@semantic-release/github',
       {
