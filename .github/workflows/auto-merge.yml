@@ -4,10 +4,10 @@ on:
     types: [labeled, edited]
 
 jobs:
-  merge:
+  check:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies')
-    name: Dependabot Auto Merge
-    runs-on: ubuntu-latest
+    name: Code Quilty Check
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node.js environment
@@ -24,8 +24,16 @@ jobs:
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
       - run: yarn
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
-        with:
-          command: merge
-          target: minor
-          github-token: ${{ secrets.GH_TOKEN }}
+      - run: yarn build
+
+merge:
+  if: contains(github.event.pull_request.labels.*.name, 'dependencies')
+  need: check
+  name: Dependabot Auto Merge
+  runs-on: ubuntu-latest
+  steps:
+    - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      with:
+        command: merge
+        target: minor
+        github-token: ${{ secrets.GH_TOKEN }}
