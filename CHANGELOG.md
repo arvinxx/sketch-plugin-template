@@ -1,5 +1,12 @@
 # 更新日志
 
+# [0.3.0](https://github.com/arvinxx/sketch-plugin-template/compare/v0.2.3...v0.3.0) (2021-02-15)
+
+
+### ✨ 新特性
+
+* 在 release CI 中自动更新 appcast ([fc2d064](https://github.com/arvinxx/sketch-plugin-template/commit/fc2d064))
+
 ## [0.2.3](https://github.com/arvinxx/sketch-plugin-template/compare/v0.2.2...v0.2.3) (2021-02-15)
 
 

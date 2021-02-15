@@ -2,6 +2,12 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <item>
+      <enclosure url="https://github.com/arvinxx/sketch-plugin-template/releases/download/v0.3.0/sketch-plugin-template.v0.3.0.zip" sparkle:version="0.3.0"/>
+    </item>
+    <item>
+      <enclosure url="https://github.com/arvinxx/sketch-plugin-template/releases/download/v0.2.3/sketch-plugin-template.v0.2.3.zip" sparkle:version="0.2.3"/>
+    </item>
+    <item>
       <enclosure url="https://github.com/arvinxx/sketch-plugin-template/releases/download/v0.0.1/sketch-plugin-template.sketchplugin.zip" sparkle:version="0.0.1"/>
     </item>
   </channel>
