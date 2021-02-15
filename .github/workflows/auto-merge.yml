@@ -26,14 +26,14 @@ jobs:
       - run: yarn
       - run: yarn build
 
-merge:
-  if: contains(github.event.pull_request.labels.*.name, 'dependencies')
-  need: check
-  name: Dependabot Auto Merge
-  runs-on: ubuntu-latest
-  steps:
-    - uses: ahmadnassri/action-dependabot-auto-merge@v2
-      with:
-        command: merge
-        target: minor
-        github-token: ${{ secrets.GH_TOKEN }}
+  merge:
+    if: contains(github.event.pull_request.labels.*.name, 'dependencies')
+    need: check
+    name: Dependabot Auto Merge
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          command: merge
+          target: minor
+          github-token: ${{ secrets.GH_TOKEN }}
