@@ -1,5 +1,19 @@
 # 更新日志
 
+## [0.2.1](https://github.com/arvinxx/sketch-plugin-template/compare/v0.2.0...v0.2.1) (2021-02-15)
+
+
+### 🎫 杂项
+
+* 优化配置项 ([4f6a143](https://github.com/arvinxx/sketch-plugin-template/commit/4f6a143))
+
+
+### 🐛 修复
+
+* 修正release ci 报错的问题 ([4a719fa](https://github.com/arvinxx/sketch-plugin-template/commit/4a719fa))
+* 修正自动合并 ci 的问题 ([754cba5](https://github.com/arvinxx/sketch-plugin-template/commit/754cba5))
+* 修正自动合并 ci 的问题 ([3be39ee](https://github.com/arvinxx/sketch-plugin-template/commit/3be39ee))
+
 # [0.2.0](https://github.com/arvinxx/sketch-plugin-template/compare/v0.1.0...v0.2.0) (2021-02-02)
 
 
