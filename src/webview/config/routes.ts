@@ -8,7 +8,7 @@ const routes: IRoute[] = [
       {
         path: '/home',
         exact: true,
-        component: './Home',
+        component: './home',
       },
     ],
   },
