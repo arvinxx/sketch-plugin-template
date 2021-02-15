@@ -28,7 +28,7 @@ jobs:
 
   merge:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies')
-    need: check
+    needs: check
     name: Dependabot Auto Merge
     runs-on: ubuntu-latest
     steps:
