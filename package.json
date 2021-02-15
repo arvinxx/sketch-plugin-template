@@ -29,7 +29,7 @@
     "build:sketch": "NODE_ENV=prod skpm-build",
     "build:webview": "APP_ROOT=src/webview umi build",
     "build:webview-analyze": "APP_ROOT=src/webview ANALYZE=1 umi build",
-    "prerelease": "ts-node ./scripts/release",
+    "pre-release": "ts-node ./scripts/release",
     "release": "semantic-release",
     "clean": "rm -rf ./*.sketchplugin release dist",
     "refresh": "find ./*.sketchplugin -name \"_*.js\" | entr -r /Applications/Sketch.app/Contents/MacOS/Sketch",
