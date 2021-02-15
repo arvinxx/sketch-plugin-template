@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
@@ -16,6 +14,9 @@ const extractExtensionData = () => {
     version: pkg.version,
   };
 };
+const { name, version } = extractExtensionData();
+
+export const zipFilename = `${name}.v${version}.zip`;
 
 const makeDestZipDirIfNotExists = () => {
   if (!fs.existsSync(DEST_ZIP_DIR)) {
@@ -24,7 +25,9 @@ const makeDestZipDirIfNotExists = () => {
 };
 
 const buildZip = (src: string, dist: string, zipFilename: string) => {
-  console.info(`📦 Building ${zipFilename}...`);
+  makeDestZipDirIfNotExists();
+
+  console.info(`📦 构建 ${zipFilename}...`);
 
   const archive = archiver('zip', { zlib: { level: 9 } });
   const stream = fs.createWriteStream(path.join(dist, zipFilename));
@@ -40,15 +43,8 @@ const buildZip = (src: string, dist: string, zipFilename: string) => {
   });
 };
 
-const main = () => {
-  const { name, version } = extractExtensionData();
-  const zipFilename = `${name}.v${version}.zip`;
-
-  makeDestZipDirIfNotExists();
-
+export const releaseZip = () => {
   buildZip(DEST_DIR, DEST_ZIP_DIR, zipFilename)
-    .then(() => console.info('✅  Build Done!'))
+    .then(() => console.info('✅  构建完成!'))
     .catch(console.error);
 };
-
-main();
