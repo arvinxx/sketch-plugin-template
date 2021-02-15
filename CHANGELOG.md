@@ -1,5 +1,12 @@
 # 更新日志
 
+## [0.3.1](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.0...v0.3.1) (2021-02-15)
+
+
+### 🐛 修复
+
+* 修正 自动合并 ci 的问题 ([bebca35](https://github.com/arvinxx/sketch-plugin-template/commit/bebca35))
+
 # [0.3.0](https://github.com/arvinxx/sketch-plugin-template/compare/v0.2.3...v0.3.0) (2021-02-15)
 
 
