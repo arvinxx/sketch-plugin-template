@@ -31,7 +31,7 @@
     "build:webview-analyze": "APP_ROOT=src/webview ANALYZE=1 umi build",
     "zip": "ts-node ./scripts/zip",
     "release": "semantic-release",
-    "clean": "rm -rf ./*.sketchplugin",
+    "clean": "rm -rf ./*.sketchplugin release dist",
     "refresh": "find ./*.sketchplugin -name \"_*.js\" | entr -r /Applications/Sketch.app/Contents/MacOS/Sketch",
     "log": "skpm log -f",
     "link": "skpm-link",

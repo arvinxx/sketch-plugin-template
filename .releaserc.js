@@ -29,12 +29,7 @@ module.exports = {
     [
       '@semantic-release/github',
       {
-        assets: [
-          {
-            path: 'dist-zip/sketch-plugin-template.zip',
-            label: 'sketch-plugin-template.${nextRelease.gitTag}.zip',
-          },
-        ],
+        assets: ['release'],
       },
     ],
     [
