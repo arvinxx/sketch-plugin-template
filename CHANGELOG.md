@@ -1,5 +1,12 @@
 # 更新日志
 
+## [0.3.3](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.2...v0.3.3) (2021-02-15)
+
+
+### 🐛 修复
+
+* 修正路由配置 bug ([34ca9ca](https://github.com/arvinxx/sketch-plugin-template/commit/34ca9ca))
+
 ## [0.3.2](https://github.com/arvinxx/sketch-plugin-template/compare/v0.3.1...v0.3.2) (2021-02-15)
 
 
