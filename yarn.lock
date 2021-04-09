@@ -2000,10 +2000,31 @@
   dependencies:
     type-detect "4.0.8"
 
-"@sketch-hq/sketch-file-format-ts@^5.2.2":
-  version "5.2.2"
-  resolved "https://registry.npm.taobao.org/@sketch-hq/sketch-file-format-ts/download/@sketch-hq/sketch-file-format-ts-5.2.2.tgz#a4ac5c2240aa6cfe742fe6330ff0e77c7cf3ccbb"
-  integrity sha1-pKxcIkCqbP50L+YzD/DnfHzzzLs=
+"@sketch-hq/sketch-file-format-1@npm:@sketch-hq/sketch-file-format@1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@sketch-hq/sketch-file-format/-/sketch-file-format-1.1.7.tgz#7de3cdfda10c97d21bbe261e0544ca581d27366e"
+  integrity sha512-tEQxuWgXIFn2fNgAiGDszrEGF/sR16O2kOjkB49PJcI7NWq+rwghr6Fx6nSL8dPNXOpYeSQOHGqTvGlVuo9YEA==
+
+"@sketch-hq/sketch-file-format-2@npm:@sketch-hq/sketch-file-format@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@sketch-hq/sketch-file-format/-/sketch-file-format-2.0.3.tgz#ed3077b6e146c947b4fe144ef0cacfc67b7e507e"
+  integrity sha512-l/sLUhHayJEair70vQEGBAldpR3K8Xb+WqZGlrVtJT3aZVGGnEAT8i8n8qNMECWBdEojTxC3gKqgiJu9U98nDw==
+
+"@sketch-hq/sketch-file-format-ts@^5.2.4":
+  version "5.2.4"
+  resolved "https://registry.yarnpkg.com/@sketch-hq/sketch-file-format-ts/-/sketch-file-format-ts-5.2.4.tgz#e6591a8492d3057310bbf66779f7c6603dfaaede"
+  integrity sha512-Q50R+cxrCWAJu7tHRomvGpCa9vdj591t2Rii+6LgsWDjmg/ur+R2+9mz590ysKMsalU7HVRp3/h9zzC38Z5now==
+  dependencies:
+    "@sketch-hq/sketch-file-format" "5.2.3"
+    "@sketch-hq/sketch-file-format-1" "npm:@sketch-hq/sketch-file-format@1.1.7"
+    "@sketch-hq/sketch-file-format-2" "npm:@sketch-hq/sketch-file-format@2.0.3"
+
+"@sketch-hq/sketch-file-format@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@sketch-hq/sketch-file-format/-/sketch-file-format-5.2.3.tgz#eb4a8693072b1a8f938aebef3976199addda6d7e"
+  integrity sha512-S+MQJAR9NN1+3R/ne1XKI+8i35t5ILT0n2Z01gqF2PIOx8Lk0GJRcSK2oespuSTlC26jAQhMoFRa2JOcRorY3g==
+  dependencies:
+    "@types/json-schema" "7.0.7"
 
 "@skpm/babel-preset@^0.2.3":
   version "0.2.3"
@@ -2421,7 +2442,7 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
+"@types/json-schema@7.0.7", "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.7"
   resolved "https://registry.npm.taobao.org/@types/json-schema/download/@types/json-schema-7.0.7.tgz?cache=0&sync_timestamp=1611096384789&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha1-mKmTUWyFnrDVxMjwmDF6nqaNua0=
