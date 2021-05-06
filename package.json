@@ -69,7 +69,7 @@
     "xml2js": "^0.4.23"
   },
   "dependencies": {
-    "@sketch-hq/sketch-file-format-ts": "^5.2.2",
+    "@sketch-hq/sketch-file-format-ts": "^6.0.2",
     "mocha-js-delegate": "^0.2.0"
   }
 }
