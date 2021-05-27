@@ -2000,10 +2000,10 @@
   dependencies:
     type-detect "4.0.8"
 
-"@sketch-hq/sketch-file-format-ts@^5.2.2":
-  version "5.2.2"
-  resolved "https://registry.npm.taobao.org/@sketch-hq/sketch-file-format-ts/download/@sketch-hq/sketch-file-format-ts-5.2.2.tgz#a4ac5c2240aa6cfe742fe6330ff0e77c7cf3ccbb"
-  integrity sha1-pKxcIkCqbP50L+YzD/DnfHzzzLs=
+"@sketch-hq/sketch-file-format-ts@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@sketch-hq/sketch-file-format-ts/-/sketch-file-format-ts-6.1.0.tgz#7bfff72352e55e3566e1b9f153d26cbc77346b8a"
+  integrity sha512-YGNLy45q4On/SjDz8asUI/h+lnQeXWtFoMc3fo0gYfBbh1YjnlUku9zgVEMR2IEZdaO/AYvgQtorPY9dgpvCjA==
 
 "@skpm/babel-preset@^0.2.3":
   version "0.2.3"
