@@ -50,7 +50,7 @@
     "archiver": "^5.2.0",
     "commitlint": "^11.0.0",
     "commitlint-config-gitmoji": "^2.2.3",
-    "concurrently": "^5.2.0",
+    "concurrently": "^6.2.2",
     "conventional-changelog-gitmoji-config": "^1.4.2",
     "eslint": "^7.21.0",
     "husky": "^4.3.8",
