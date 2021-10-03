@@ -5,7 +5,7 @@ const commandList = [
     name: 'Plugin Info',
     identifier: `${identifier}.system-info`,
     script: './app.ts',
-    handlers: 'toggleSystemInfoPanel',
+    handler: 'toggleSystemInfoPanel',
   },
 ];
 
