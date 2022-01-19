@@ -48,7 +48,7 @@
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.4.0",
     "archiver": "^5.2.0",
-    "commitlint": "^11.0.0",
+    "commitlint": "^16.0.3",
     "commitlint-config-gitmoji": "^2.2.3",
     "concurrently": "^5.2.0",
     "conventional-changelog-gitmoji-config": "^1.4.2",
