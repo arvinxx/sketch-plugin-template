@@ -2497,10 +2497,10 @@
   resolved "https://registry.npm.taobao.org/@types/mustache/download/@types/mustache-4.1.0.tgz#b702b1e2879d9ff1f39ac89a4a7784a489aee947"
   integrity sha1-twKx4oedn/HzmsiaSneEpImu6Uc=
 
-"@types/node@*", "@types/node@>= 8", "@types/node@^14.14.32":
-  version "14.14.32"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.32.tgz#90c5c4a8d72bbbfe53033f122341343249183448"
-  integrity sha512-/Ctrftx/zp4m8JOujM5ZhwzlWLx22nbQJiVqz8/zE15gOeEW+uly3FSX4fGFpcfEvFzXcMCJwq9lGVWgyARXhg==
+"@types/node@*", "@types/node@>= 8", "@types/node@^18.7.21":
+  version "18.7.21"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.21.tgz#63ee6688070e456325b6748dc492a7b948593871"
+  integrity sha512-rLFzK5bhM0YPyCoTC8bolBjMk7bwnZ8qeZUBslBfjZQou2ssJdWslx9CZ8DGM+Dx7QXQiiTVZ/6QO6kwtHkZCA==
 
 "@types/node@14.0.23":
   version "14.0.23"
