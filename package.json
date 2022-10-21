@@ -58,7 +58,7 @@
     "prettier": "^2.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "semantic-release": "^17.4.0",
+    "semantic-release": "^19.0.5",
     "sketch-module-web-view": "^3.5.1",
     "sketch-types": "^0.4.2",
     "terser-webpack-plugin": "^3.1.0",
