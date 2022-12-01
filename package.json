@@ -62,7 +62,7 @@
     "sketch-module-web-view": "^3.5.1",
     "sketch-types": "^0.4.2",
     "terser-webpack-plugin": "^3.1.0",
-    "ts-loader": "^8.0.17",
+    "ts-loader": "^9.4.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3",
     "umi": "^3.3.9",
